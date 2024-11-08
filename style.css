@@ -17,31 +17,34 @@ body {
   flex-direction: column; 
 }
 
-h1{
+h1 {
 	font-size: 40px;
-	text-align: center;
+  text-align: center;
 }
-/* Background video */
+
+	/*video panel*/
 .container12{
-width: 100%;
-height: 100vh;
-background-color: black;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-margin-bottom: 0px ;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-bottom: 0px;
 }
 
 .content{
 	text-align: center;
 	display: block;
 }
+
 .content h1{
 	font-size: 95px;
 	color: #fff;
 	margin-bottom: 50px;
 }
+
 .content a{
 	font-size: 23px;
 	color: #fff;
@@ -51,22 +54,24 @@ margin-bottom: 0px ;
 	border-radius: 50px;
 	transition: 0.3s;
 }
+
 .content a:hover{
 	background-color: #fff;
 	color: #000;
 }
+
 .background-clip{
 	position: absolute;
 	right: 0;
 	bottom: 0;
 	 width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Ensures the video covers the entire area without distorting */
   z-index: -1;
 }
-
 /* Mobile devices */
-@media (max-width: 992px) {	
+@media (max-width: 992px) {
+	/* Adjust content and button sizes for smaller screens */
 	h1 {
 		font-size: 55px;
 	}
@@ -76,13 +81,39 @@ margin-bottom: 0px ;
 		padding: 10px 20px;
 	}
 
-/* Ensure video behaves responsively */
-		.background-clip {
-			object-fit: cover;
-			width: 100vw;
-			height: 100vh;
-		}
+	/* Ensure video behaves responsively */
+	.background-clip {
+		object-fit: cover;
+		width: 100vw;
+		height: 100vh;
+	}
 }
+
+/* Extra small devices */
+@media (max-width: 600px) {
+	.content h1 {
+		font-size: 45px;
+	}
+}
+
+
+
+@media (min-aspect-ratio:16/9) {
+	.background-clip{
+			width: 100%;
+			height: auto;
+	}
+}
+
+@media (max-aspect-ratio:16/9) {
+	.background-clip{
+			width: auto;
+			height: 100%;
+	}
+}
+
+/* end video */
+
 .container{
 	cursor: pointer;
 	position: absolute;
@@ -91,11 +122,13 @@ margin-bottom: 0px ;
 	width: 30px;
 	height: 20px;
 }
+
 .bars{
 	width: 30px;
 	height: 4px;
-	background: black;
+	background: #000;
 }
+
 .bars::before,
 .bars::after{
 	content: '';
@@ -104,6 +137,7 @@ margin-bottom: 0px ;
 	height: 4px;
 	background: #000;
 }
+
 .bars::before{
 	margin-top: 9px;
 }
@@ -111,11 +145,13 @@ margin-bottom: 0px ;
 .bars::after{
 	margin-top: 18px;
 }
+
 nav{
 	position: absolute;
 	width: 100%;
 	height: 100vh;
-	top: 0;
+	top: 0; /* Align to top */
+
 	background: #000;
 	display: flex;
 	justify-content: center;
@@ -124,9 +160,10 @@ nav{
 	z-index: 999;
 }
 
-nav ul{
+nav ul {
 	list-style: none;
 }
+
 nav ul li{
 	margin: 50px 0;
 }
@@ -155,10 +192,12 @@ nav ul li a:after{
 	transform: scaleX(0);
 }
 
+
 nav ul li a:hover:after{
 	transform: scaleX(1);
 }
-nav .close{
+
+nav .close {
 	width: 30px;
 	height: 30px;
 	position: absolute;
@@ -168,6 +207,7 @@ nav .close{
 	opacity: 0;
 	pointer-events: none;
 }
+
 nav h2{
 	position: absolute;
 	top:5%;
@@ -206,12 +246,7 @@ nav .close:hover div::after{
   }
 }
 
-
-/* Post metarials*/
-.heading{
-	width: 100%;
-}
-
+/*just post*/
 .heading{
 	width: 100%;
 	display: flex;
@@ -243,10 +278,10 @@ nav .close:hover div::after{
 	margin-bottom: 15px;
 }
 .container-post{
-		width: 90%;
-		margin:0px 20px auto;
-		padding:0px 10px;
-		margin-bottom: 130px;
+	width: 90%;
+	margin:0px 20px auto;
+	padding:0px 10px;
+	margin-bottom: 130px;
 }
 .about{
 	display: flex;
@@ -273,7 +308,7 @@ nav .close:hover div::after{
 }
 .about-content{
 	flex: 1;
-} 
+}
 .about-content h2{
 	font-size: 23px;
 	margin-bottom: 15px;
@@ -288,14 +323,13 @@ nav .close:hover div::after{
 	display: inline-block;
 	color: #fff;
 	background-color: #1b2b85;
-	padding: 10px 20px;
+padding: 10px 20px;
 	font-size: 19px;
 	text-decoration: none;
 	border-radius: 25px;
 	margin-top: 15px;
 	transform: 0.3s ease;
 }
-
 .about-content .read-more:hover{
 	background-color: #3a4371;
 }
@@ -329,3 +363,8 @@ nav .close:hover div::after{
 		font-size: 16px;
 	}
 }
+/* footer section */
+/* .container1{
+	margin-top: 2000px;} */
+
+
