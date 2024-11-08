@@ -20,9 +20,8 @@ require_once 'includes/login_view.inc.php';
 
         <!---Navigation BAR just for main page-->
         <header>
-            <h2 class="logo">Logo</h2>
+            <h2 class="logo">Cloud Drone</h2>
             <nav class="navigation">
-                <button class="buttonnav">Helpline</button>
                 <button class="buttonnav"><a href="Register_page.php">Register</a></button>
                 <button class="buttonnav"><a href="login_page.php">Login</a></button>
             </nav>
@@ -91,7 +90,7 @@ check_signup_errors();
 ?>
         <!-- Copyright-->
         <div class="copyright">
-            Copyright 2024 &copy; <strong><a href="https://www.facebook.com/profile.php?id=100013146253677" target="_blank">Team Cloud</a></strong>
+            Copyright 2024 &copy; <strong><a href="#" target="_blank">Team Cloud</a></strong>
           </div>
           <!-- back to top -->
 <a href="#" class="back-to-top"><ion-icon name="arrow-up"></ion-icon></a>

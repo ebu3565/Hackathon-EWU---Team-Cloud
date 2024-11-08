@@ -20,9 +20,9 @@ require_once 'includes/login_view.inc.php';
 
         <!---Navigation BAR just for main page-->
         <header>
-            <h2 class="logo">Logo</h2>
+            <h2 class="logo">Cloud Drone</h2>
             <nav class="navigation">
-                <button class="buttonnav">Helpline</button>
+                <!-- <button class="buttonnav">Helpline</button> -->
                 <button class="buttonnav"><a href="Register_page.php">Register</a></button>
                 <button class="buttonnav"><a href="login_page.php">Login</a></button>
             </nav>
