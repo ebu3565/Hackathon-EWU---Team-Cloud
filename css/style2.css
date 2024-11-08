@@ -433,7 +433,7 @@ nav .close:hover div::after{
   display: flex;
   justify-content: space-between; /* Or use 'space-around' or 'space-evenly' depending on your design */
   gap: 35px; /* Adds spacing between the two iframes */
-  margin-top: 721px;
+  margin-top: 280px;
   width: 800px;
   height: 500px;
 
